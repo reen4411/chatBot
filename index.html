@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox</title>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/bot.png">
+
+    <!-- font awesome icon cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="parent">
+        <div class="desc">
+            <h1 class="text">روبوت حفر الباطن الالي</h1>
+            <p>يساهم المساعد الذكي في زيادة الإنتاجية عبر تنفيذ المهام بشكل أسرع وأكثر دقة</p>
+            <button id="init">ابدأ الشات</button>
+            <img src="./img/logo.png" alt="logo" class="logo">
+        </div>
+        <div>
+            <img src="./img/bot.png" alt="" class="bot-img">
+        </div>
+    </div>
+    <div id="test" style="position: fixed;top: 4rem;left: 8rem;display: none;">
+        <div class="child" id="chatbot">
+            <div class="header">
+                <div class="h-child">
+                    <img src="./img/bot.png" alt="avatar" id="avatar">
+                    <div>
+                        <span class="name">المساعد الالي</span>
+                        <br>
+                        <span class="online">متصل الان</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="refBtn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
+                </div>
+            </div>
+
+            <div id="chat-box">
+
+            </div>
+            <div class="footer">
+                <div class="chatbox-message-bottom">
+                    <form action="#" class="chatbox-message-form">
+                        <textarea rows="1" placeholder="اكتب رسالتك...." class="chatbox-message-input"></textarea>
+                        <button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js file  -->
+    <script src="./main.js"></script>
+</body>
+</html>
